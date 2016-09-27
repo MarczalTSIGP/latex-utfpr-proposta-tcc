@@ -1,0 +1,48 @@
+% ---------------------------------------------------------------------------------------------------------------
+% TEMPLATE PARA PROPOSTA DE TRABALHO DE CONCLUSÃO DE CURSO
+% Universidade Tecnológica Federal do Paraná - UTFPR
+% Customização da classe abnTeX2 (http://www.abntex.net.br/) para as normas da UTFPR
+%
+% Projeto: http://tcc.tsi.gp.utfpr.edu.br/paginas/modelos-latex-da-utfpr
+% Autores: Diego Marczal
+% 	   Michael Vornes <https://github.com/mvornes>
+%
+%----------------------------------------------------------------------------------------------------------------
+% Codificação: UTF-8
+% LaTeX:  abnTeX2          
+% ---------------------------------------------------------------------------------------------------------------
+
+
+% CARREGA CLASSE PERSONALIZADA DA UTFPR--------------------------------------------------------------------------
+\documentclass[%twoside,                   % Impressão em frente e verso
+    	        oneside,                   % Impressão apenas frente
+]{configuracoes/utfpr-abntex2}
+
+
+% INCLUI ARQUIVOS DE CONFIGURAÇÕES-------------------------------------------------------------------------------
+\include{configuracoes/pacotes}
+\include{configuracoes/configuracoes-pdf}
+
+
+% INCLUI ARQUIVOS DA PROPOSTA DE TRABALHO DE CONCLUSÃO DE CURSO (PRÉ-TEXTUAIS, TEXTUAIS, PÓS-TEXTUAIS)------------
+
+% INSERE CAPA E FOLHA DE ROSTO
+\include{estrutura/pre-textuais/capa}
+\include{estrutura/pre-textuais/folha-rosto}
+
+\begin{document}
+% INSERE ELEMENTOS PRÉ-TEXTUAIS
+\pretextual
+\imprimircapa                                               	           % Comando para imprimir Capa
+\imprimirfolhaderosto{}                                     		   % Comando para imprimir Folha de rosto
+
+\textual
+% INSERE ELEMENTOS TEXTUAIS
+\include{estrutura/textuais/proposta-de-tcc}                               % Proposta de TCC
+\include{estrutura/textuais/descricao-da-proposta}                         % Descrição da Proposta
+
+\postextual
+% INSERE ELEMENTOS PÓS-TEXTUAIS
+\include{estrutura/pos-textuais/referencias}           			   % Referências
+
+\end{document}
