@@ -1,5 +1,5 @@
 %%-----------------------------------------------------------------------------
-%% The LaTeX Project Public License 
+%% The LaTeX Project Public License
 %%-----------------------------------------------------------------------------
 %% This work may be distributed and/or modified under the
 %% conditions of the LaTeX Project Public License, either version 1.3
@@ -25,7 +25,7 @@
 %
 %------------------------------------------------------------------------------
 % Codificação: UTF-8
-% LaTeX:  abnTeX2          
+% LaTeX:  abnTeX2
 % -----------------------------------------------------------------------------
 
 \NeedsTeXFormat{LaTeX2e}
@@ -365,6 +365,18 @@
             \large\MakeUppercase{\imprimirlocal}\\
             \large\MakeUppercase{\imprimirdata}
 	\end{SingleSpacing}
+    \end{center}
+
+
+    \begin{center}
+        \begin{tabular}{ M{3.2cm} m{12cm} }
+            \includegraphics[scale=0.8]{./dados/images/by-sa.eps} \href{https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR}{4.0 Internacional}  &
+                                          {\small Esta licença permite remixe, adaptação e criação a partir do trabalho,
+                                          mesmo para fins comerciais, desde que sejam atribuídos créditos ao(s)
+                                          autor(es) e que licenciem as novas criações sob termos idênticos.
+                                          Conteúdos elaborados por terceiros, citados e referenciados nesta obra
+                                          não são cobertos pela licença.}\\
+        \end{tabular}
     \end{center}
 }
 \makeatother

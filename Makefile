@@ -13,7 +13,7 @@ LATEXMK     = latexmk
 BIBTEX      = bibtex
 MAKEINDEX   = makeindex
 GHOSTSCRIPT = gs
-OPENPDF     = evince
+OPENPDF     = open
 
 # Executando o processo completo de limpeza, compilação e compressão
 
